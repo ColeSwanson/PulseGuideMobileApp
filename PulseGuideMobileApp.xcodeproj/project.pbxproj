@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C07F37632D5FD25600F9C8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07F374A2D5FD25400F9C8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07F37512D5FD25400F9C8BC;
+			remoteInfo = PulseGuideMobileApp;
+		};
+		C07F376D2D5FD25700F9C8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07F374A2D5FD25400F9C8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07F37512D5FD25400F9C8BC;
+			remoteInfo = PulseGuideMobileApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C07F37522D5FD25400F9C8BC /* PulseGuideMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseGuideMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07F37622D5FD25600F9C8BC /* PulseGuideMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseGuideMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseGuideMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PulseGuideMobileApp;
+			sourceTree = "<group>";
+		};
+		C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PulseGuideMobileAppTests;
+			sourceTree = "<group>";
+		};
+		C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PulseGuideMobileAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07F374F2D5FD25400F9C8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F375F2D5FD25600F9C8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F37692D5FD25700F9C8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C07F37492D5FD25400F9C8BC = {
+			isa = PBXGroup;
+			children = (
+				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
+				C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
+				C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
+				C07F37532D5FD25400F9C8BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C07F37532D5FD25400F9C8BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07F37522D5FD25400F9C8BC /* PulseGuideMobileApp.app */,
+				C07F37622D5FD25600F9C8BC /* PulseGuideMobileAppTests.xctest */,
+				C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07F37762D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileApp" */;
+			buildPhases = (
+				C07F374E2D5FD25400F9C8BC /* Sources */,
+				C07F374F2D5FD25400F9C8BC /* Frameworks */,
+				C07F37502D5FD25400F9C8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
+			);
+			name = PulseGuideMobileApp;
+			packageProductDependencies = (
+			);
+			productName = PulseGuideMobileApp;
+			productReference = C07F37522D5FD25400F9C8BC /* PulseGuideMobileApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C07F37612D5FD25600F9C8BC /* PulseGuideMobileAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07F37792D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileAppTests" */;
+			buildPhases = (
+				C07F375E2D5FD25600F9C8BC /* Sources */,
+				C07F375F2D5FD25600F9C8BC /* Frameworks */,
+				C07F37602D5FD25600F9C8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07F37642D5FD25600F9C8BC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
+			);
+			name = PulseGuideMobileAppTests;
+			packageProductDependencies = (
+			);
+			productName = PulseGuideMobileAppTests;
+			productReference = C07F37622D5FD25600F9C8BC /* PulseGuideMobileAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C07F376B2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07F377C2D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileAppUITests" */;
+			buildPhases = (
+				C07F37682D5FD25700F9C8BC /* Sources */,
+				C07F37692D5FD25700F9C8BC /* Frameworks */,
+				C07F376A2D5FD25700F9C8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07F376E2D5FD25700F9C8BC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
+			);
+			name = PulseGuideMobileAppUITests;
+			packageProductDependencies = (
+			);
+			productName = PulseGuideMobileAppUITests;
+			productReference = C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07F374A2D5FD25400F9C8BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					C07F37512D5FD25400F9C8BC = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C07F37612D5FD25600F9C8BC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C07F37512D5FD25400F9C8BC;
+					};
+					C07F376B2D5FD25700F9C8BC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C07F37512D5FD25400F9C8BC;
+					};
+				};
+			};
+			buildConfigurationList = C07F374D2D5FD25400F9C8BC /* Build configuration list for PBXProject "PulseGuideMobileApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07F37492D5FD25400F9C8BC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C07F37532D5FD25400F9C8BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */,
+				C07F37612D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
+				C07F376B2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07F37502D5FD25400F9C8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F37602D5FD25600F9C8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F376A2D5FD25700F9C8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07F374E2D5FD25400F9C8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F375E2D5FD25600F9C8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F37682D5FD25700F9C8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C07F37642D5FD25600F9C8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */;
+			targetProxy = C07F37632D5FD25600F9C8BC /* PBXContainerItemProxy */;
+		};
+		C07F376E2D5FD25700F9C8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */;
+			targetProxy = C07F376D2D5FD25700F9C8BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C07F37742D5FD25700F9C8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C07F37752D5FD25700F9C8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07F37772D5FD25700F9C8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07F37782D5FD25700F9C8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C07F377A2D5FD25700F9C8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseGuideMobileApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseGuideMobileApp";
+			};
+			name = Debug;
+		};
+		C07F377B2D5FD25700F9C8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseGuideMobileApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseGuideMobileApp";
+			};
+			name = Release;
+		};
+		C07F377D2D5FD25700F9C8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PulseGuideMobileApp;
+			};
+			name = Debug;
+		};
+		C07F377E2D5FD25700F9C8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PulseGuideMobileApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07F374D2D5FD25400F9C8BC /* Build configuration list for PBXProject "PulseGuideMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07F37742D5FD25700F9C8BC /* Debug */,
+				C07F37752D5FD25700F9C8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07F37762D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07F37772D5FD25700F9C8BC /* Debug */,
+				C07F37782D5FD25700F9C8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07F37792D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07F377A2D5FD25700F9C8BC /* Debug */,
+				C07F377B2D5FD25700F9C8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07F377C2D5FD25700F9C8BC /* Build configuration list for PBXNativeTarget "PulseGuideMobileAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07F377D2D5FD25700F9C8BC /* Debug */,
+				C07F377E2D5FD25700F9C8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C07F374A2D5FD25400F9C8BC /* Project object */;
+}
