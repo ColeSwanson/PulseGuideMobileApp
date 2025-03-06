@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C0BA21462D7A559500652CB2 /* PulseGuideWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C07F37632D5FD25600F9C8BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +25,50 @@
 			remoteGlobalIDString = C07F37512D5FD25400F9C8BC;
 			remoteInfo = PulseGuideMobileApp;
 		};
+		C0BA21332D7A559500652CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07F374A2D5FD25400F9C8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BA21222D7A559300652CB2;
+			remoteInfo = "PulseGuideWatchApp Watch App";
+		};
+		C0BA213D2D7A559500652CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07F374A2D5FD25400F9C8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BA21222D7A559300652CB2;
+			remoteInfo = "PulseGuideWatchApp Watch App";
+		};
+		C0BA21442D7A559500652CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07F374A2D5FD25400F9C8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BA21222D7A559300652CB2;
+			remoteInfo = "PulseGuideWatchApp Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0BA21472D7A559500652CB2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0BA21462D7A559500652CB2 /* PulseGuideWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C07F37522D5FD25400F9C8BC /* PulseGuideMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseGuideMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07F37622D5FD25600F9C8BC /* PulseGuideMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseGuideMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseGuideMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PulseGuideWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BA21322D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PulseGuideWatchApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BA213C2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PulseGuideWatchApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +85,21 @@
 		C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PulseGuideMobileAppUITests;
+			sourceTree = "<group>";
+		};
+		C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "PulseGuideWatchApp Watch App";
+			sourceTree = "<group>";
+		};
+		C0BA21352D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "PulseGuideWatchApp Watch AppTests";
+			sourceTree = "<group>";
+		};
+		C0BA213F2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "PulseGuideWatchApp Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +126,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0BA21202D7A559300652CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA212F2D7A559500652CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA21392D7A559500652CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +156,9 @@
 				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
 				C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
 				C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
+				C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
+				C0BA21352D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */,
+				C0BA213F2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */,
 				C07F37532D5FD25400F9C8BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +169,9 @@
 				C07F37522D5FD25400F9C8BC /* PulseGuideMobileApp.app */,
 				C07F37622D5FD25600F9C8BC /* PulseGuideMobileAppTests.xctest */,
 				C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */,
+				C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */,
+				C0BA21322D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests.xctest */,
+				C0BA213C2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +186,12 @@
 				C07F374E2D5FD25400F9C8BC /* Sources */,
 				C07F374F2D5FD25400F9C8BC /* Frameworks */,
 				C07F37502D5FD25400F9C8BC /* Resources */,
+				C0BA21472D7A559500652CB2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0BA21452D7A559500652CB2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
@@ -163,6 +249,74 @@
 			productReference = C07F376C2D5FD25700F9C8BC /* PulseGuideMobileAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C0BA21222D7A559300652CB2 /* PulseGuideWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BA214E2D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch App" */;
+			buildPhases = (
+				C0BA211F2D7A559300652CB2 /* Sources */,
+				C0BA21202D7A559300652CB2 /* Frameworks */,
+				C0BA21212D7A559300652CB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
+			);
+			name = "PulseGuideWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "PulseGuideWatchApp Watch App";
+			productReference = C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0BA21312D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BA214F2D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch AppTests" */;
+			buildPhases = (
+				C0BA212E2D7A559500652CB2 /* Sources */,
+				C0BA212F2D7A559500652CB2 /* Frameworks */,
+				C0BA21302D7A559500652CB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BA21342D7A559500652CB2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0BA21352D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */,
+			);
+			name = "PulseGuideWatchApp Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "PulseGuideWatchApp Watch AppTests";
+			productReference = C0BA21322D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0BA213B2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BA21502D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch AppUITests" */;
+			buildPhases = (
+				C0BA21382D7A559500652CB2 /* Sources */,
+				C0BA21392D7A559500652CB2 /* Frameworks */,
+				C0BA213A2D7A559500652CB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BA213E2D7A559500652CB2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0BA213F2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */,
+			);
+			name = "PulseGuideWatchApp Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "PulseGuideWatchApp Watch AppUITests";
+			productReference = C0BA213C2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +338,17 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = C07F37512D5FD25400F9C8BC;
 					};
+					C0BA21222D7A559300652CB2 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C0BA21312D7A559500652CB2 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C0BA21222D7A559300652CB2;
+					};
+					C0BA213B2D7A559500652CB2 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C0BA21222D7A559300652CB2;
+					};
 				};
 			};
 			buildConfigurationList = C07F374D2D5FD25400F9C8BC /* Build configuration list for PBXProject "PulseGuideMobileApp" */;
@@ -203,6 +368,9 @@
 				C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */,
 				C07F37612D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
 				C07F376B2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
+				C0BA21222D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
+				C0BA21312D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */,
+				C0BA213B2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +391,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C07F376A2D5FD25700F9C8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA21212D7A559300652CB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA21302D7A559500652CB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA213A2D7A559500652CB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +442,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0BA211F2D7A559300652CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA212E2D7A559500652CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BA21382D7A559500652CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +475,21 @@
 			isa = PBXTargetDependency;
 			target = C07F37512D5FD25400F9C8BC /* PulseGuideMobileApp */;
 			targetProxy = C07F376D2D5FD25700F9C8BC /* PBXContainerItemProxy */;
+		};
+		C0BA21342D7A559500652CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0BA21222D7A559300652CB2 /* PulseGuideWatchApp Watch App */;
+			targetProxy = C0BA21332D7A559500652CB2 /* PBXContainerItemProxy */;
+		};
+		C0BA213E2D7A559500652CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0BA21222D7A559300652CB2 /* PulseGuideWatchApp Watch App */;
+			targetProxy = C0BA213D2D7A559500652CB2 /* PBXContainerItemProxy */;
+		};
+		C0BA21452D7A559500652CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0BA21222D7A559300652CB2 /* PulseGuideWatchApp Watch App */;
+			targetProxy = C0BA21442D7A559500652CB2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +743,144 @@
 			};
 			name = Release;
 		};
+		C0BA21482D7A559500652CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseGuideWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = PulseGuide.PulseGuideMobileApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		C0BA21492D7A559500652CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseGuideWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = PulseGuide.PulseGuideMobileApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		C0BA214A2D7A559500652CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PulseGuide.PulseGuideWatchApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseGuideWatchApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseGuideWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		C0BA214B2D7A559500652CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PulseGuide.PulseGuideWatchApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseGuideWatchApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseGuideWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		C0BA214C2D7A559500652CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PulseGuide.PulseGuideWatchApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PulseGuideWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		C0BA214D2D7A559500652CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5MB7M37L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PulseGuide.PulseGuideWatchApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PulseGuideWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +916,33 @@
 			buildConfigurations = (
 				C07F377D2D5FD25700F9C8BC /* Debug */,
 				C07F377E2D5FD25700F9C8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0BA214E2D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BA21482D7A559500652CB2 /* Debug */,
+				C0BA21492D7A559500652CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0BA214F2D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BA214A2D7A559500652CB2 /* Debug */,
+				C0BA214B2D7A559500652CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0BA21502D7A559500652CB2 /* Build configuration list for PBXNativeTarget "PulseGuideWatchApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BA214C2D7A559500652CB2 /* Debug */,
+				C0BA214D2D7A559500652CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
