@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var speed: Double = 0
-    @State private var depth: Double = 0
+    @State private var speed: Double = 100
+    @State private var depth: Double = 2.20
     @State private var timer: Timer? = nil
     @State private var isRunning: Bool = false
     @State private var elapsedTime: TimeInterval = 0
@@ -40,13 +40,13 @@ struct ContentView: View {
                         .rotationEffect(angle)
                 }
                 // Draw the needle
-                if (speed + 90) < 100 || speed + 90 > 120{
+                if speed < 100 || speed > 120{
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
                         .rotationEffect(Angle(degrees: speed * 4.5 - 90))
-                }else if (((speed + 90) >= 100) && ((speed + 90) < 105)) || (((speed + 90) > 115) && ((speed + 90) <= 120)){
+                }else if speed <= 102 || speed >= 118{
                     Rectangle()
                         .fill(Color.yellow)
                         .frame(width: 4, height: 100)
@@ -68,45 +68,39 @@ struct ContentView: View {
                 Text("100")
                     .font(.body)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(x:-120, y:-130)
                 
                 Text("120")
                     .font(.body)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(x:120, y:-130)
                 
                     
                 Text("Compression Rate")
                     .font(.title)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(y: 50)
                 
-               /* // Show the current speed
-                if (speed + 90) < 100 || speed + 90 > 120{
-                    Text("\((Int(speed))+90) CPM")
+               // Show the current speed
+                if speed < 100 || speed > 120{
+                    Text("\(Int(speed)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
-                        .offset(y: 50)
-                }else if (((speed + 90) >= 100) && ((speed + 90) < 105)) || (((speed + 90) > 115) && ((speed + 90) <= 120)){
-                    Text("\((Int(speed))+90) CPM")
+                        .offset(y: 100)
+                }else if speed <= 102 || speed >= 118{
+                    Text("\(Int(speed)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
-                        .offset(y: 50)
+                        .offset(y: 100)
                 }else{
-                    Text("\((Int(speed))+90) CPM")
+                    Text("\(Int(speed)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
-                        .offset(y: 50)
-                }*/
-                // Slider to control the speed
-                Slider(value: $speed, in: 0...40, step: 1)
-                    .offset(y: 100)
+                        .offset(y: 100)
+                }
             }
             .frame(width: 300, height: 300)
             
@@ -117,14 +111,14 @@ struct ContentView: View {
 
                 
                 // Draw the bar
-                if (depth * 0.008 + 1.8) < 2.0 || depth * 0.008 + 1.8 > 2.4{
+                if depth < 2 || depth > 2.4{
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 110, height: 2
                                * depth)
                         .offset(y: depth * (-1) + 100)
                         //.offset(y: depth * (-2) + 100)
-                }else if (((depth * 0.008 + 1.8) >= 2.0) && ((depth * 0.008 + 1.8) < 2.1)) || (((depth * 0.008 + 1.8) > 2.3) && ((depth * 0.008 + 1.8) <= 2.4)){
+                }else if depth >= 2.35 || depth <= 2.05{
                     Rectangle()
                         .fill(Color.yellow)
                         .frame(width: 110, height: 2 * depth)
@@ -151,45 +145,39 @@ struct ContentView: View {
                 Text("2.0 in")
                     .font(.body)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(x:80, y:50)
                 
                 Text("2.4 in")
                     .font(.body)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(x:80, y:-50)
                 
                 Text("Compression Depth")
                     .font(.title)
                     .bold()
-                    .foregroundColor(.black)
                     .offset(y:130)
                 
-                /*// Show the current speed
-                if (depth) < 25 || depth > 75{
-                    Text("\((Int(depth))*0.008+1.8) in.")
+                // Show the current speed
+                if (depth) < 2 || depth > 2.4{
+                    Text("\(Int(depth)) In.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
-                        .offset(y: 130)
-                }else if (((depth) >= 25) && ((depth * 0.008 + 1.8) < 2.1)) || (((depth * 0.008 + 1.8) > 2.3) && (depth <= 2.4)){
-                    Text("\((Int(depth))*0.008+1.8) in.")
+                        .offset(y: -150)
+                }else if depth >= 2.35 || depth <= 2.05{
+                    Text("\(Int(depth)) In.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
-                        .offset(y:130)
+                        .offset(y:-150)
                 }else{
-                    Text("\((Int(depth))*0.008+1.8) in.")
+                    Text("\(Int(depth)) In.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
-                        .offset(y: 130)
-                }*/
-                
-                
-                Slider(value: $depth, in: 0...100, step: 1)
-                    .offset(y: -130)
+                        .offset(y: -150)
+                }
+
             }
             .frame(width: 300, height: 300)
                

@@ -1,24 +1,31 @@
-//
-//  ContentView.swift
-//  PulseGuideWatchApp Watch App
-//
-//  Created by Swanson, Cole T on 3/6/25.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var motionManager = MotionManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+            Text("Motion Data Logger")
+                .font(.headline)
+                .padding()
 
-#Preview {
-    ContentView()
+            HStack {
+                Button("Start") {
+                    motionManager.startRecording()
+                }
+                .padding()
+
+                Button("Stop") {
+                    motionManager.stopRecording()
+                }
+                .padding()
+            }
+
+            Button("Export CSV") {
+                motionManager.exportCSV()
+            }
+            .padding()
+        }
+    }
 }
