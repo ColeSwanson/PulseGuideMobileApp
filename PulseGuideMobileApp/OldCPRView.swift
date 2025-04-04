@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CPRView.swift
 //  PhoneAppPrototype
 //
 //  Created by Faith Maue on 12/10/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OldCPRView: View {
     @State private var speed: Double = 100
     @State private var depth: Double = 2.20
     @State private var timer: Timer? = nil
@@ -221,5 +221,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    OldCPRView()
 }

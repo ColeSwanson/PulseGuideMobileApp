@@ -8,6 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		C0BA21462D7A559500652CB2 /* PulseGuideWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9E100002D9F7806007ABF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */; };
+		C9E100022D9F7A20007ABF8D /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100012D9F7A20007ABF8D /* TabView.swift */; };
+		C9E100042D9F7FC0007ABF8D /* CPRStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */; };
+		C9E100062D9F7FD3007ABF8D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */; };
+		C9E100082D9F8AE9007ABF8D /* LiveCPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */; };
+		C9E1000A2D9F8E72007ABF8D /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100092D9F8E72007ABF8D /* SpeechManager.swift */; };
+		C9E100362D9F966F007ABF8D /* 28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100282D9F966F007ABF8D /* 28.mp3 */; };
+		C9E100372D9F966F007ABF8D /* 19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001F2D9F966F007ABF8D /* 19.mp3 */; };
+		C9E100382D9F966F007ABF8D /* Switch Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100332D9F966F007ABF8D /* Switch Off.mp3 */; };
+		C9E100392D9F966F007ABF8D /* Resume Compressions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100302D9F966F007ABF8D /* Resume Compressions.mp3 */; };
+		C9E1003A2D9F966F007ABF8D /* 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001D2D9F966F007ABF8D /* 17.mp3 */; };
+		C9E1003B2D9F966F007ABF8D /* 04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100102D9F966F007ABF8D /* 04.mp3 */; };
+		C9E1003C2D9F966F007ABF8D /* 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100222D9F966F007ABF8D /* 22.mp3 */; };
+		C9E1003D2D9F966F007ABF8D /* 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100192D9F966F007ABF8D /* 13.mp3 */; };
+		C9E1003E2D9F966F007ABF8D /* 29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100292D9F966F007ABF8D /* 29.mp3 */; };
+		C9E1003F2D9F966F007ABF8D /* 16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001C2D9F966F007ABF8D /* 16.mp3 */; };
+		C9E100402D9F966F007ABF8D /* 23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100232D9F966F007ABF8D /* 23.mp3 */; };
+		C9E100412D9F966F007ABF8D /* Go Faster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002D2D9F966F007ABF8D /* Go Faster.mp3 */; };
+		C9E100422D9F966F007ABF8D /* 05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100112D9F966F007ABF8D /* 05.mp3 */; };
+		C9E100432D9F966F007ABF8D /* 09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100152D9F966F007ABF8D /* 09.mp3 */; };
+		C9E100442D9F966F007ABF8D /* Go Shallower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002E2D9F966F007ABF8D /* Go Shallower.mp3 */; };
+		C9E100452D9F966F007ABF8D /* Starting Compressions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100322D9F966F007ABF8D /* Starting Compressions.mp3 */; };
+		C9E100462D9F966F007ABF8D /* Give 2 Breaths.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002B2D9F966F007ABF8D /* Give 2 Breaths.mp3 */; };
+		C9E100472D9F966F007ABF8D /* 26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100262D9F966F007ABF8D /* 26.mp3 */; };
+		C9E100482D9F966F007ABF8D /* Pausing Compressions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002F2D9F966F007ABF8D /* Pausing Compressions.mp3 */; };
+		C9E100492D9F966F007ABF8D /* 20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100202D9F966F007ABF8D /* 20.mp3 */; };
+		C9E1004A2D9F966F007ABF8D /* 01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1000D2D9F966F007ABF8D /* 01.mp3 */; };
+		C9E1004B2D9F966F007ABF8D /* Go Deeper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002C2D9F966F007ABF8D /* Go Deeper.mp3 */; };
+		C9E1004C2D9F966F007ABF8D /* 03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1000F2D9F966F007ABF8D /* 03.mp3 */; };
+		C9E1004D2D9F966F007ABF8D /* 08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100142D9F966F007ABF8D /* 08.mp3 */; };
+		C9E1004E2D9F966F007ABF8D /* 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100132D9F966F007ABF8D /* 07.mp3 */; };
+		C9E1004F2D9F966F007ABF8D /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100162D9F966F007ABF8D /* 10.mp3 */; };
+		C9E100502D9F966F007ABF8D /* 25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100252D9F966F007ABF8D /* 25.mp3 */; };
+		C9E100512D9F966F007ABF8D /* 15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001B2D9F966F007ABF8D /* 15.mp3 */; };
+		C9E100522D9F966F007ABF8D /* 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001E2D9F966F007ABF8D /* 18.mp3 */; };
+		C9E100532D9F966F007ABF8D /* 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1001A2D9F966F007ABF8D /* 14.mp3 */; };
+		C9E100542D9F966F007ABF8D /* 24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100242D9F966F007ABF8D /* 24.mp3 */; };
+		C9E100552D9F966F007ABF8D /* 27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100272D9F966F007ABF8D /* 27.mp3 */; };
+		C9E100562D9F966F007ABF8D /* 06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100122D9F966F007ABF8D /* 06.mp3 */; };
+		C9E100572D9F966F007ABF8D /* 30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1002A2D9F966F007ABF8D /* 30.mp3 */; };
+		C9E100582D9F966F007ABF8D /* 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100182D9F966F007ABF8D /* 12.mp3 */; };
+		C9E100592D9F966F007ABF8D /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100172D9F966F007ABF8D /* 11.mp3 */; };
+		C9E1005A2D9F966F007ABF8D /* Slow Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100312D9F966F007ABF8D /* Slow Down.mp3 */; };
+		C9E1005B2D9F966F007ABF8D /* 02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1000E2D9F966F007ABF8D /* 02.mp3 */; };
+		C9E1005C2D9F966F007ABF8D /* 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100212D9F966F007ABF8D /* 21.mp3 */; };
+		C9E1005D2D9F966F007ABF8D /* Use the AED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100342D9F966F007ABF8D /* Use the AED.mp3 */; };
+		C9E1005F2D9F9714007ABF8D /* AudioCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */; };
+		C9E100612D9F9940007ABF8D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100602D9F9940007ABF8D /* Status.swift */; };
+		C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */; };
+		C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */; };
+		C9E1FFFF2D9F7806007ABF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,14 +120,60 @@
 		C0BA21232D7A559300652CB2 /* PulseGuideWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PulseGuideWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA21322D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PulseGuideWatchApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA213C2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PulseGuideWatchApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E100012D9F7A20007ABF8D /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRStartView.swift; sourceTree = "<group>"; };
+		C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCPRView.swift; sourceTree = "<group>"; };
+		C9E100092D9F8E72007ABF8D /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		C9E1000D2D9F966F007ABF8D /* 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01.mp3; sourceTree = "<group>"; };
+		C9E1000E2D9F966F007ABF8D /* 02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02.mp3; sourceTree = "<group>"; };
+		C9E1000F2D9F966F007ABF8D /* 03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03.mp3; sourceTree = "<group>"; };
+		C9E100102D9F966F007ABF8D /* 04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04.mp3; sourceTree = "<group>"; };
+		C9E100112D9F966F007ABF8D /* 05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05.mp3; sourceTree = "<group>"; };
+		C9E100122D9F966F007ABF8D /* 06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06.mp3; sourceTree = "<group>"; };
+		C9E100132D9F966F007ABF8D /* 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07.mp3; sourceTree = "<group>"; };
+		C9E100142D9F966F007ABF8D /* 08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08.mp3; sourceTree = "<group>"; };
+		C9E100152D9F966F007ABF8D /* 09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09.mp3; sourceTree = "<group>"; };
+		C9E100162D9F966F007ABF8D /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
+		C9E100172D9F966F007ABF8D /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
+		C9E100182D9F966F007ABF8D /* 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12.mp3; sourceTree = "<group>"; };
+		C9E100192D9F966F007ABF8D /* 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13.mp3; sourceTree = "<group>"; };
+		C9E1001A2D9F966F007ABF8D /* 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14.mp3; sourceTree = "<group>"; };
+		C9E1001B2D9F966F007ABF8D /* 15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15.mp3; sourceTree = "<group>"; };
+		C9E1001C2D9F966F007ABF8D /* 16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16.mp3; sourceTree = "<group>"; };
+		C9E1001D2D9F966F007ABF8D /* 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17.mp3; sourceTree = "<group>"; };
+		C9E1001E2D9F966F007ABF8D /* 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18.mp3; sourceTree = "<group>"; };
+		C9E1001F2D9F966F007ABF8D /* 19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19.mp3; sourceTree = "<group>"; };
+		C9E100202D9F966F007ABF8D /* 20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20.mp3; sourceTree = "<group>"; };
+		C9E100212D9F966F007ABF8D /* 21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21.mp3; sourceTree = "<group>"; };
+		C9E100222D9F966F007ABF8D /* 22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 22.mp3; sourceTree = "<group>"; };
+		C9E100232D9F966F007ABF8D /* 23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 23.mp3; sourceTree = "<group>"; };
+		C9E100242D9F966F007ABF8D /* 24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 24.mp3; sourceTree = "<group>"; };
+		C9E100252D9F966F007ABF8D /* 25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 25.mp3; sourceTree = "<group>"; };
+		C9E100262D9F966F007ABF8D /* 26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 26.mp3; sourceTree = "<group>"; };
+		C9E100272D9F966F007ABF8D /* 27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 27.mp3; sourceTree = "<group>"; };
+		C9E100282D9F966F007ABF8D /* 28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 28.mp3; sourceTree = "<group>"; };
+		C9E100292D9F966F007ABF8D /* 29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 29.mp3; sourceTree = "<group>"; };
+		C9E1002A2D9F966F007ABF8D /* 30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 30.mp3; sourceTree = "<group>"; };
+		C9E1002B2D9F966F007ABF8D /* Give 2 Breaths.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Give 2 Breaths.mp3"; sourceTree = "<group>"; };
+		C9E1002C2D9F966F007ABF8D /* Go Deeper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go Deeper.mp3"; sourceTree = "<group>"; };
+		C9E1002D2D9F966F007ABF8D /* Go Faster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go Faster.mp3"; sourceTree = "<group>"; };
+		C9E1002E2D9F966F007ABF8D /* Go Shallower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go Shallower.mp3"; sourceTree = "<group>"; };
+		C9E1002F2D9F966F007ABF8D /* Pausing Compressions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pausing Compressions.mp3"; sourceTree = "<group>"; };
+		C9E100302D9F966F007ABF8D /* Resume Compressions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resume Compressions.mp3"; sourceTree = "<group>"; };
+		C9E100312D9F966F007ABF8D /* Slow Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Slow Down.mp3"; sourceTree = "<group>"; };
+		C9E100322D9F966F007ABF8D /* Starting Compressions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Starting Compressions.mp3"; sourceTree = "<group>"; };
+		C9E100332D9F966F007ABF8D /* Switch Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Switch Off.mp3"; sourceTree = "<group>"; };
+		C9E100342D9F966F007ABF8D /* Use the AED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Use the AED.mp3"; sourceTree = "<group>"; };
+		C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCounter.swift; sourceTree = "<group>"; };
+		C9E100602D9F9940007ABF8D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCPRView.swift; sourceTree = "<group>"; };
+		C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PulseGuideMobileApp;
-			sourceTree = "<group>";
-		};
 		C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PulseGuideMobileAppTests;
@@ -153,7 +250,9 @@
 		C07F37492D5FD25400F9C8BC = {
 			isa = PBXGroup;
 			children = (
-				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
+				C9E1FFFC2D9F7806007ABF8D /* PulseGuideMobileApp */,
+				C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */,
+				C9E100352D9F966F007ABF8D /* Audio Files */,
 				C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
 				C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
 				C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
@@ -176,6 +275,78 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C9E100352D9F966F007ABF8D /* Audio Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1000D2D9F966F007ABF8D /* 01.mp3 */,
+				C9E1000E2D9F966F007ABF8D /* 02.mp3 */,
+				C9E1000F2D9F966F007ABF8D /* 03.mp3 */,
+				C9E100102D9F966F007ABF8D /* 04.mp3 */,
+				C9E100112D9F966F007ABF8D /* 05.mp3 */,
+				C9E100122D9F966F007ABF8D /* 06.mp3 */,
+				C9E100132D9F966F007ABF8D /* 07.mp3 */,
+				C9E100142D9F966F007ABF8D /* 08.mp3 */,
+				C9E100152D9F966F007ABF8D /* 09.mp3 */,
+				C9E100162D9F966F007ABF8D /* 10.mp3 */,
+				C9E100172D9F966F007ABF8D /* 11.mp3 */,
+				C9E100182D9F966F007ABF8D /* 12.mp3 */,
+				C9E100192D9F966F007ABF8D /* 13.mp3 */,
+				C9E1001A2D9F966F007ABF8D /* 14.mp3 */,
+				C9E1001B2D9F966F007ABF8D /* 15.mp3 */,
+				C9E1001C2D9F966F007ABF8D /* 16.mp3 */,
+				C9E1001D2D9F966F007ABF8D /* 17.mp3 */,
+				C9E1001E2D9F966F007ABF8D /* 18.mp3 */,
+				C9E1001F2D9F966F007ABF8D /* 19.mp3 */,
+				C9E100202D9F966F007ABF8D /* 20.mp3 */,
+				C9E100212D9F966F007ABF8D /* 21.mp3 */,
+				C9E100222D9F966F007ABF8D /* 22.mp3 */,
+				C9E100232D9F966F007ABF8D /* 23.mp3 */,
+				C9E100242D9F966F007ABF8D /* 24.mp3 */,
+				C9E100252D9F966F007ABF8D /* 25.mp3 */,
+				C9E100262D9F966F007ABF8D /* 26.mp3 */,
+				C9E100272D9F966F007ABF8D /* 27.mp3 */,
+				C9E100282D9F966F007ABF8D /* 28.mp3 */,
+				C9E100292D9F966F007ABF8D /* 29.mp3 */,
+				C9E1002A2D9F966F007ABF8D /* 30.mp3 */,
+				C9E1002B2D9F966F007ABF8D /* Give 2 Breaths.mp3 */,
+				C9E1002C2D9F966F007ABF8D /* Go Deeper.mp3 */,
+				C9E1002D2D9F966F007ABF8D /* Go Faster.mp3 */,
+				C9E1002E2D9F966F007ABF8D /* Go Shallower.mp3 */,
+				C9E1002F2D9F966F007ABF8D /* Pausing Compressions.mp3 */,
+				C9E100302D9F966F007ABF8D /* Resume Compressions.mp3 */,
+				C9E100312D9F966F007ABF8D /* Slow Down.mp3 */,
+				C9E100322D9F966F007ABF8D /* Starting Compressions.mp3 */,
+				C9E100332D9F966F007ABF8D /* Switch Off.mp3 */,
+				C9E100342D9F966F007ABF8D /* Use the AED.mp3 */,
+			);
+			path = "Audio Files";
+			sourceTree = "<group>";
+		};
+		C9E1FFF82D9F7806007ABF8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9E1FFFC2D9F7806007ABF8D /* PulseGuideMobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */,
+				C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */,
+				C9E100012D9F7A20007ABF8D /* TabView.swift */,
+				C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */,
+				C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */,
+				C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */,
+				C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */,
+				C9E1FFF82D9F7806007ABF8D /* Preview Content */,
+				C9E100092D9F8E72007ABF8D /* SpeechManager.swift */,
+				C9E100602D9F9940007ABF8D /* Status.swift */,
+			);
+			path = PulseGuideMobileApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +363,6 @@
 			);
 			dependencies = (
 				C0BA21452D7A559500652CB2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C07F37542D5FD25400F9C8BC /* PulseGuideMobileApp */,
 			);
 			name = PulseGuideMobileApp;
 			packageProductDependencies = (
@@ -325,7 +493,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					C07F37512D5FD25400F9C8BC = {
 						CreatedOnToolsVersion = 16.1;
@@ -380,6 +548,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E1FFFF2D9F7806007ABF8D /* Preview Assets.xcassets in Resources */,
+				C9E100362D9F966F007ABF8D /* 28.mp3 in Resources */,
+				C9E100372D9F966F007ABF8D /* 19.mp3 in Resources */,
+				C9E100382D9F966F007ABF8D /* Switch Off.mp3 in Resources */,
+				C9E100392D9F966F007ABF8D /* Resume Compressions.mp3 in Resources */,
+				C9E1003A2D9F966F007ABF8D /* 17.mp3 in Resources */,
+				C9E1003B2D9F966F007ABF8D /* 04.mp3 in Resources */,
+				C9E1003C2D9F966F007ABF8D /* 22.mp3 in Resources */,
+				C9E1003D2D9F966F007ABF8D /* 13.mp3 in Resources */,
+				C9E1003E2D9F966F007ABF8D /* 29.mp3 in Resources */,
+				C9E1003F2D9F966F007ABF8D /* 16.mp3 in Resources */,
+				C9E100402D9F966F007ABF8D /* 23.mp3 in Resources */,
+				C9E100412D9F966F007ABF8D /* Go Faster.mp3 in Resources */,
+				C9E100422D9F966F007ABF8D /* 05.mp3 in Resources */,
+				C9E100432D9F966F007ABF8D /* 09.mp3 in Resources */,
+				C9E100442D9F966F007ABF8D /* Go Shallower.mp3 in Resources */,
+				C9E100452D9F966F007ABF8D /* Starting Compressions.mp3 in Resources */,
+				C9E100462D9F966F007ABF8D /* Give 2 Breaths.mp3 in Resources */,
+				C9E100472D9F966F007ABF8D /* 26.mp3 in Resources */,
+				C9E100482D9F966F007ABF8D /* Pausing Compressions.mp3 in Resources */,
+				C9E100492D9F966F007ABF8D /* 20.mp3 in Resources */,
+				C9E1004A2D9F966F007ABF8D /* 01.mp3 in Resources */,
+				C9E1004B2D9F966F007ABF8D /* Go Deeper.mp3 in Resources */,
+				C9E1004C2D9F966F007ABF8D /* 03.mp3 in Resources */,
+				C9E1004D2D9F966F007ABF8D /* 08.mp3 in Resources */,
+				C9E1004E2D9F966F007ABF8D /* 07.mp3 in Resources */,
+				C9E1004F2D9F966F007ABF8D /* 10.mp3 in Resources */,
+				C9E100502D9F966F007ABF8D /* 25.mp3 in Resources */,
+				C9E100512D9F966F007ABF8D /* 15.mp3 in Resources */,
+				C9E100522D9F966F007ABF8D /* 18.mp3 in Resources */,
+				C9E100532D9F966F007ABF8D /* 14.mp3 in Resources */,
+				C9E100542D9F966F007ABF8D /* 24.mp3 in Resources */,
+				C9E100552D9F966F007ABF8D /* 27.mp3 in Resources */,
+				C9E100562D9F966F007ABF8D /* 06.mp3 in Resources */,
+				C9E100572D9F966F007ABF8D /* 30.mp3 in Resources */,
+				C9E100582D9F966F007ABF8D /* 12.mp3 in Resources */,
+				C9E100592D9F966F007ABF8D /* 11.mp3 in Resources */,
+				C9E1005A2D9F966F007ABF8D /* Slow Down.mp3 in Resources */,
+				C9E1005B2D9F966F007ABF8D /* 02.mp3 in Resources */,
+				C9E1005C2D9F966F007ABF8D /* 21.mp3 in Resources */,
+				C9E1005D2D9F966F007ABF8D /* Use the AED.mp3 in Resources */,
+				C9E100002D9F7806007ABF8D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +635,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E100062D9F7FD3007ABF8D /* BackgroundView.swift in Sources */,
+				C9E100022D9F7A20007ABF8D /* TabView.swift in Sources */,
+				C9E100082D9F8AE9007ABF8D /* LiveCPRView.swift in Sources */,
+				C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */,
+				C9E1005F2D9F9714007ABF8D /* AudioCounter.swift in Sources */,
+				C9E100612D9F9940007ABF8D /* Status.swift in Sources */,
+				C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */,
+				C9E100042D9F7FC0007ABF8D /* CPRStartView.swift in Sources */,
+				C9E1000A2D9F8E72007ABF8D /* SpeechManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +840,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
-				DEVELOPMENT_TEAM = U5MB7M37L5;
+				DEVELOPMENT_TEAM = 5BE9AG9X7E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -650,7 +869,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
-				DEVELOPMENT_TEAM = U5MB7M37L5;
+				DEVELOPMENT_TEAM = 5BE9AG9X7E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
