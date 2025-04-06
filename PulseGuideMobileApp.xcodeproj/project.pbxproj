@@ -55,7 +55,18 @@
 		C9E1005C2D9F966F007ABF8D /* 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100212D9F966F007ABF8D /* 21.mp3 */; };
 		C9E1005D2D9F966F007ABF8D /* Use the AED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E100342D9F966F007ABF8D /* Use the AED.mp3 */; };
 		C9E1005F2D9F9714007ABF8D /* AudioCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */; };
-		C9E100612D9F9940007ABF8D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100602D9F9940007ABF8D /* Status.swift */; };
+		C9E100612D9F9940007ABF8D /* CompressionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100602D9F9940007ABF8D /* CompressionStatus.swift */; };
+		C9E100632DA24F7A007ABF8D /* CPRState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100622DA24F7A007ABF8D /* CPRState.swift */; };
+		C9E1006B2DA25026007ABF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E100642DA25026007ABF8D /* Preview Assets.xcassets */; };
+		C9E1006C2DA25026007ABF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E100662DA25026007ABF8D /* Assets.xcassets */; };
+		C9E1006D2DA25026007ABF8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100672DA25026007ABF8D /* ContentView.swift */; };
+		C9E1006E2DA25026007ABF8D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100682DA25026007ABF8D /* MotionManager.swift */; };
+		C9E1006F2DA25026007ABF8D /* PulseGuideWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100692DA25026007ABF8D /* PulseGuideWatchAppApp.swift */; };
+		C9E100712DA25547007ABF8D /* DialGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100702DA25547007ABF8D /* DialGaugeView.swift */; };
+		C9E100732DA25F4C007ABF8D /* SpeedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100722DA25F4C007ABF8D /* SpeedStatus.swift */; };
+		C9E100752DA264ED007ABF8D /* DepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100742DA264ED007ABF8D /* DepthView.swift */; };
+		C9E100772DA26611007ABF8D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100762DA26611007ABF8D /* Double.swift */; };
+		C9E100792DA266C3007ABF8D /* DepthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100782DA266C3007ABF8D /* DepthStatus.swift */; };
 		C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */; };
 		C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */; };
 		C9E1FFFF2D9F7806007ABF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */; };
@@ -166,7 +177,18 @@
 		C9E100332D9F966F007ABF8D /* Switch Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Switch Off.mp3"; sourceTree = "<group>"; };
 		C9E100342D9F966F007ABF8D /* Use the AED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Use the AED.mp3"; sourceTree = "<group>"; };
 		C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCounter.swift; sourceTree = "<group>"; };
-		C9E100602D9F9940007ABF8D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		C9E100602D9F9940007ABF8D /* CompressionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionStatus.swift; sourceTree = "<group>"; };
+		C9E100622DA24F7A007ABF8D /* CPRState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRState.swift; sourceTree = "<group>"; };
+		C9E100642DA25026007ABF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9E100662DA25026007ABF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E100672DA25026007ABF8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9E100682DA25026007ABF8D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		C9E100692DA25026007ABF8D /* PulseGuideWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseGuideWatchAppApp.swift; sourceTree = "<group>"; };
+		C9E100702DA25547007ABF8D /* DialGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialGaugeView.swift; sourceTree = "<group>"; };
+		C9E100722DA25F4C007ABF8D /* SpeedStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedStatus.swift; sourceTree = "<group>"; };
+		C9E100742DA264ED007ABF8D /* DepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthView.swift; sourceTree = "<group>"; };
+		C9E100762DA26611007ABF8D /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		C9E100782DA266C3007ABF8D /* DepthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStatus.swift; sourceTree = "<group>"; };
 		C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCPRView.swift; sourceTree = "<group>"; };
@@ -182,11 +204,6 @@
 		C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PulseGuideMobileAppUITests;
-			sourceTree = "<group>";
-		};
-		C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "PulseGuideWatchApp Watch App";
 			sourceTree = "<group>";
 		};
 		C0BA21352D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */ = {
@@ -251,11 +268,10 @@
 			isa = PBXGroup;
 			children = (
 				C9E1FFFC2D9F7806007ABF8D /* PulseGuideMobileApp */,
-				C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */,
 				C9E100352D9F966F007ABF8D /* Audio Files */,
 				C07F37652D5FD25600F9C8BC /* PulseGuideMobileAppTests */,
 				C07F376F2D5FD25700F9C8BC /* PulseGuideMobileAppUITests */,
-				C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
+				C9E1006A2DA25026007ABF8D /* PulseGuideWatchApp Watch App */,
 				C0BA21352D7A559500652CB2 /* PulseGuideWatchApp Watch AppTests */,
 				C0BA213F2D7A559500652CB2 /* PulseGuideWatchApp Watch AppUITests */,
 				C07F37532D5FD25400F9C8BC /* Products */,
@@ -322,6 +338,26 @@
 			path = "Audio Files";
 			sourceTree = "<group>";
 		};
+		C9E100652DA25026007ABF8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100642DA25026007ABF8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9E1006A2DA25026007ABF8D /* PulseGuideWatchApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100692DA25026007ABF8D /* PulseGuideWatchAppApp.swift */,
+				C9E100672DA25026007ABF8D /* ContentView.swift */,
+				C9E100682DA25026007ABF8D /* MotionManager.swift */,
+				C9E100652DA25026007ABF8D /* Preview Content */,
+				C9E100662DA25026007ABF8D /* Assets.xcassets */,
+			);
+			path = "PulseGuideWatchApp Watch App";
+			sourceTree = "<group>";
+		};
 		C9E1FFF82D9F7806007ABF8D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,11 +374,18 @@
 				C9E100012D9F7A20007ABF8D /* TabView.swift */,
 				C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */,
 				C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */,
+				C9E100742DA264ED007ABF8D /* DepthView.swift */,
+				C9E100702DA25547007ABF8D /* DialGaugeView.swift */,
 				C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */,
 				C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */,
-				C9E1FFF82D9F7806007ABF8D /* Preview Content */,
 				C9E100092D9F8E72007ABF8D /* SpeechManager.swift */,
-				C9E100602D9F9940007ABF8D /* Status.swift */,
+				C9E100602D9F9940007ABF8D /* CompressionStatus.swift */,
+				C9E100722DA25F4C007ABF8D /* SpeedStatus.swift */,
+				C9E100782DA266C3007ABF8D /* DepthStatus.swift */,
+				C9E100622DA24F7A007ABF8D /* CPRState.swift */,
+				C9E100762DA26611007ABF8D /* Double.swift */,
+				C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */,
+				C9E1FFF82D9F7806007ABF8D /* Preview Content */,
 			);
 			path = PulseGuideMobileApp;
 			sourceTree = "<group>";
@@ -428,9 +471,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C0BA21242D7A559300652CB2 /* PulseGuideWatchApp Watch App */,
 			);
 			name = "PulseGuideWatchApp Watch App";
 			packageProductDependencies = (
@@ -611,6 +651,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E1006B2DA25026007ABF8D /* Preview Assets.xcassets in Resources */,
+				C9E1006C2DA25026007ABF8D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,11 +678,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E100062D9F7FD3007ABF8D /* BackgroundView.swift in Sources */,
+				C9E100732DA25F4C007ABF8D /* SpeedStatus.swift in Sources */,
 				C9E100022D9F7A20007ABF8D /* TabView.swift in Sources */,
 				C9E100082D9F8AE9007ABF8D /* LiveCPRView.swift in Sources */,
+				C9E100792DA266C3007ABF8D /* DepthStatus.swift in Sources */,
+				C9E100632DA24F7A007ABF8D /* CPRState.swift in Sources */,
 				C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */,
+				C9E100772DA26611007ABF8D /* Double.swift in Sources */,
 				C9E1005F2D9F9714007ABF8D /* AudioCounter.swift in Sources */,
-				C9E100612D9F9940007ABF8D /* Status.swift in Sources */,
+				C9E100712DA25547007ABF8D /* DialGaugeView.swift in Sources */,
+				C9E100752DA264ED007ABF8D /* DepthView.swift in Sources */,
+				C9E100612D9F9940007ABF8D /* CompressionStatus.swift in Sources */,
 				C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */,
 				C9E100042D9F7FC0007ABF8D /* CPRStartView.swift in Sources */,
 				C9E1000A2D9F8E72007ABF8D /* SpeechManager.swift in Sources */,
@@ -665,6 +713,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E1006D2DA25026007ABF8D /* ContentView.swift in Sources */,
+				C9E1006E2DA25026007ABF8D /* MotionManager.swift in Sources */,
+				C9E1006F2DA25026007ABF8D /* PulseGuideWatchAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

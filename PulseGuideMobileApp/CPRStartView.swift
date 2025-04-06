@@ -114,7 +114,7 @@ struct CPRStartView: View {
                             .foregroundStyle(.black.opacity(0.3))
                     )
                     
-                    // Get an AED
+                    // Ask for help
                     VStack {
                         HStack {
                             Image(systemName: "3.circle")
