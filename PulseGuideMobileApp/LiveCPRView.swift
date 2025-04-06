@@ -20,7 +20,8 @@ struct LiveCPRView: View {
     let minDepth: Double = 1.5
     let maxDepth: Double = 3.0
     
-    @State private var compressionCounter = 1
+    @State private var compressionCounter = 22
+    @State private var compressionRound = 1
     
     @State private var overallStatus: CompressionStatus = .good
     @State private var depthStatus: DepthStatus = .good
@@ -38,6 +39,50 @@ struct LiveCPRView: View {
             BackgroundView(color: .green)
             
             VStack {
+                
+                // Live Mode
+                HStack {
+                    VStack {
+                        HStack {
+                            Image(systemName: "bolt.heart.fill")
+                                .font(.system(size: 24))
+                                .foregroundStyle(.red)
+                            
+                            Text("LIVE MODE OFF")
+                                .font(.system(size: 20, weight: .bold, design: .rounded))
+                                .foregroundStyle(.white)
+                            
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.bottom, 1)
+                        
+                        HStack {
+                            Text("Turn on to use Apple Watch for live feedback.")
+                                .foregroundStyle(.white)
+                                .font(.system(size: 14))
+                                .multilineTextAlignment(.leading)
+                            
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                    }
+                    .padding(.vertical)
+                    
+                    Button {
+                        print("tapped call")
+                    } label: {
+                        Text("Turn On")
+                            .fontWeight(.medium)
+                    }
+                    .tint(.green)
+                    .buttonStyle(.borderedProminent)
+                    .padding(.horizontal)
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundStyle(.black.opacity(0.3))
+                )
                 
                 // Speed
                 HStack {
@@ -70,6 +115,12 @@ struct LiveCPRView: View {
                             .lineLimit(.none)
                             .foregroundStyle(.white)
                             .padding(.trailing)
+                        
+                        Slider(value: $compressionSpeed, in: 80...140)
+                            .onChange(of: compressionSpeed) { _,_ in
+                                updateSpeedStatus()
+                            }
+                            .padding(.horizontal)
                     }
                 }
                 .background(
@@ -103,9 +154,16 @@ struct LiveCPRView: View {
                         
                         Text(getDepthSubtext())
                             .multilineTextAlignment(.leading)
-                            .lineLimit(.none)
                             .foregroundStyle(.white)
                             .padding(.trailing)
+                            .fixedSize(horizontal: false, vertical: true)
+                        
+                        Slider(value: $compressionDepth, in: minDepth...maxDepth)
+                            .padding(.top)
+                            .onChange(of: compressionDepth) { _, _ in
+                                updateDepthStatus()
+                            }
+                            .padding(.horizontal)
                     }
                     
                     Spacer()
@@ -115,22 +173,63 @@ struct LiveCPRView: View {
                         .foregroundStyle(.black.opacity(0.3))
                 )
                 
-                Spacer()
-                
-                Text("Compressions: \(compressionCounter - 1)")
-                    .font(.largeTitle)
-                
-                Slider(value: $compressionSpeed, in: 80...140)
-                    .onChange(of: compressionSpeed) { _,_ in
-                        updateSpeedStatus()
+                GeometryReader { geo in
+                    let sideLength = geo.size.width / 2
+                    
+                    HStack {
+                        // Compression Counter
+                        VStack {
+                            Text("COMPRESSION #")
+                                .font(.system(size: 18, weight: .bold, design: .rounded))
+                                .foregroundStyle(.white)
+                            
+                            Spacer()
+                            
+                            Text("\(compressionCounter)")
+                                .font(.system(size: 44, weight: .bold, design: .rounded))
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(.cyan)
+                            
+                            Text("Round \(compressionRound)")
+                                .font(.system(size: 18))
+                                .foregroundStyle(.white)
+                            
+                            Spacer()
+                        }
+                        .padding()
+                        .frame(height: sideLength)
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .foregroundStyle(.black.opacity(0.3))
+                        )
+                        
+                        // Next Up
+                        VStack {
+                            Text("NEXT UP")
+                                .font(.system(size: 18, weight: .bold, design: .rounded))
+                                .foregroundStyle(.white)
+                            
+                            Spacer()
+                            
+                            Text("GIVE BREATHS")
+                                .font(.system(size: 30, weight: .bold, design: .rounded))
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(.purple)
+                            
+                            Spacer()
+                        }
+                        .padding()
+                        .frame(height: sideLength)
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .foregroundStyle(.black.opacity(0.3))
+                        )
                     }
+                }
+                .frame(height: 150)
+
                 
-                Slider(value: $compressionDepth, in: minDepth...maxDepth)
-                    .padding(.top)
-                    .onChange(of: compressionDepth) { _, _ in
-                        updateDepthStatus()
-                    }
-                
+
             }
             .padding(.horizontal)
         }
