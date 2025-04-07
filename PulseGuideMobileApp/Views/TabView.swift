@@ -36,24 +36,18 @@ struct TabView: View {
                 switch selectedIndex {
                     case 0:
                         NavigationView {
-                            VStack {
-                                Text("hello!")
-                            }
-                            .navigationTitle("Home")
+                            HomeView()
                         }
                     case 1:
                         NavigationView {
                             VStack {
-                                Text("asadfasdf!")
+                                Text("Start CPR!")
                             }
                             .navigationTitle("Start CPR")
                         }
                     case 2:
                         NavigationView {
-                            VStack {
-                                Text("learning!")
-                            }
-                            .navigationTitle("Learn")
+                            LearnView()
                         }
                     default:
                         NavigationView {
@@ -64,8 +58,8 @@ struct TabView: View {
                         }
                 }
             }
-                        
-            Divider()
+            
+            //Divider()
             
             HStack {
                 ForEach(0..<3, id: \.self) { number in
@@ -86,7 +80,7 @@ struct TabView: View {
                                     .frame(width: 60, height: 60)
                                     .background(.red)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
-
+                                
                             } else {
                                 Image(systemName: selectedIndex == number ? fillIcons[number] : icons[number])
                                     .font(.system(size: 25))
@@ -113,6 +107,8 @@ struct TabView: View {
         .fullScreenCover(isPresented: $presented, content: {
             CPRStartView(isPresented: $presented)
         })
+        
+        
     }
 }
 

@@ -70,7 +70,7 @@ struct LiveCPRView: View {
                     .padding(.vertical)
                     
                     Button {
-                        print("tapped call")
+                        print("turn on watch mode")
                     } label: {
                         Text("Turn On")
                             .fontWeight(.medium)

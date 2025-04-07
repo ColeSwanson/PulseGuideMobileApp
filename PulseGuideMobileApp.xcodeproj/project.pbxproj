@@ -67,6 +67,11 @@
 		C9E100752DA264ED007ABF8D /* DepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100742DA264ED007ABF8D /* DepthView.swift */; };
 		C9E100772DA26611007ABF8D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100762DA26611007ABF8D /* Double.swift */; };
 		C9E100792DA266C3007ABF8D /* DepthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100782DA266C3007ABF8D /* DepthStatus.swift */; };
+		C9E1007B2DA37260007ABF8D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1007A2DA37260007ABF8D /* HomeView.swift */; };
+		C9E1007D2DA37360007ABF8D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1007C2DA37360007ABF8D /* SettingsView.swift */; };
+		C9E1007F2DA37459007ABF8D /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1007E2DA37459007ABF8D /* Quotes.swift */; };
+		C9E100812DA37BFD007ABF8D /* Rounded Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E100802DA37BFD007ABF8D /* Rounded Logo.png */; };
+		C9E1008A2DA37F7A007ABF8D /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E100892DA37F7A007ABF8D /* LearnView.swift */; };
 		C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */; };
 		C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */; };
 		C9E1FFFF2D9F7806007ABF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */; };
@@ -189,6 +194,12 @@
 		C9E100742DA264ED007ABF8D /* DepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthView.swift; sourceTree = "<group>"; };
 		C9E100762DA26611007ABF8D /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		C9E100782DA266C3007ABF8D /* DepthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStatus.swift; sourceTree = "<group>"; };
+		C9E1007A2DA37260007ABF8D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9E1007C2DA37360007ABF8D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C9E1007E2DA37459007ABF8D /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		C9E100802DA37BFD007ABF8D /* Rounded Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rounded Logo.png"; sourceTree = "<group>"; };
+		C9E100892DA37F7A007ABF8D /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		C9E1008B2DA382A9007ABF8D /* PulseGuideMobileApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PulseGuideMobileApp.entitlements; sourceTree = "<group>"; };
 		C9E1FFF72D9F7806007ABF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCPRView.swift; sourceTree = "<group>"; };
@@ -358,6 +369,68 @@
 			path = "PulseGuideWatchApp Watch App";
 			sourceTree = "<group>";
 		};
+		C9E100832DA37D27007ABF8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */,
+				C9E100012D9F7A20007ABF8D /* TabView.swift */,
+				C9E100872DA37D88007ABF8D /* CPR */,
+				C9E1007A2DA37260007ABF8D /* HomeView.swift */,
+				C9E100892DA37F7A007ABF8D /* LearnView.swift */,
+				C9E1007C2DA37360007ABF8D /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9E100842DA37D46007ABF8D /* Data Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100722DA25F4C007ABF8D /* SpeedStatus.swift */,
+				C9E100782DA266C3007ABF8D /* DepthStatus.swift */,
+				C9E100622DA24F7A007ABF8D /* CPRState.swift */,
+				C9E100602D9F9940007ABF8D /* CompressionStatus.swift */,
+			);
+			path = "Data Tracking";
+			sourceTree = "<group>";
+		};
+		C9E100852DA37D5F007ABF8D /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */,
+				C9E100092D9F8E72007ABF8D /* SpeechManager.swift */,
+				C9E1007E2DA37459007ABF8D /* Quotes.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		C9E100862DA37D76007ABF8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100762DA26611007ABF8D /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9E100872DA37D88007ABF8D /* CPR */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100882DA37D9C007ABF8D /* Subviews */,
+				C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */,
+				C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */,
+				C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */,
+			);
+			path = CPR;
+			sourceTree = "<group>";
+		};
+		C9E100882DA37D9C007ABF8D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				C9E100742DA264ED007ABF8D /* DepthView.swift */,
+				C9E100702DA25547007ABF8D /* DialGaugeView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		C9E1FFF82D9F7806007ABF8D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,22 +442,14 @@
 		C9E1FFFC2D9F7806007ABF8D /* PulseGuideMobileApp */ = {
 			isa = PBXGroup;
 			children = (
-				C9E1FFFA2D9F7806007ABF8D /* OldCPRView.swift */,
-				C9E1005E2D9F9714007ABF8D /* AudioCounter.swift */,
-				C9E100012D9F7A20007ABF8D /* TabView.swift */,
-				C9E100032D9F7FC0007ABF8D /* CPRStartView.swift */,
-				C9E100072D9F8AE9007ABF8D /* LiveCPRView.swift */,
-				C9E100742DA264ED007ABF8D /* DepthView.swift */,
-				C9E100702DA25547007ABF8D /* DialGaugeView.swift */,
-				C9E100052D9F7FD3007ABF8D /* BackgroundView.swift */,
 				C9E1FFFB2D9F7806007ABF8D /* SceneDelegate.swift */,
-				C9E100092D9F8E72007ABF8D /* SpeechManager.swift */,
-				C9E100602D9F9940007ABF8D /* CompressionStatus.swift */,
-				C9E100722DA25F4C007ABF8D /* SpeedStatus.swift */,
-				C9E100782DA266C3007ABF8D /* DepthStatus.swift */,
-				C9E100622DA24F7A007ABF8D /* CPRState.swift */,
-				C9E100762DA26611007ABF8D /* Double.swift */,
+				C9E100832DA37D27007ABF8D /* Views */,
+				C9E100842DA37D46007ABF8D /* Data Tracking */,
+				C9E100852DA37D5F007ABF8D /* Miscellaneous */,
+				C9E100862DA37D76007ABF8D /* Extensions */,
 				C9E1FFF92D9F7806007ABF8D /* Assets.xcassets */,
+				C9E1008B2DA382A9007ABF8D /* PulseGuideMobileApp.entitlements */,
+				C9E100802DA37BFD007ABF8D /* Rounded Logo.png */,
 				C9E1FFF82D9F7806007ABF8D /* Preview Content */,
 			);
 			path = PulseGuideMobileApp;
@@ -622,6 +687,7 @@
 				C9E100542D9F966F007ABF8D /* 24.mp3 in Resources */,
 				C9E100552D9F966F007ABF8D /* 27.mp3 in Resources */,
 				C9E100562D9F966F007ABF8D /* 06.mp3 in Resources */,
+				C9E100812DA37BFD007ABF8D /* Rounded Logo.png in Resources */,
 				C9E100572D9F966F007ABF8D /* 30.mp3 in Resources */,
 				C9E100582D9F966F007ABF8D /* 12.mp3 in Resources */,
 				C9E100592D9F966F007ABF8D /* 11.mp3 in Resources */,
@@ -681,15 +747,19 @@
 				C9E100732DA25F4C007ABF8D /* SpeedStatus.swift in Sources */,
 				C9E100022D9F7A20007ABF8D /* TabView.swift in Sources */,
 				C9E100082D9F8AE9007ABF8D /* LiveCPRView.swift in Sources */,
+				C9E1008A2DA37F7A007ABF8D /* LearnView.swift in Sources */,
 				C9E100792DA266C3007ABF8D /* DepthStatus.swift in Sources */,
+				C9E1007D2DA37360007ABF8D /* SettingsView.swift in Sources */,
 				C9E100632DA24F7A007ABF8D /* CPRState.swift in Sources */,
 				C9E1FFFD2D9F7806007ABF8D /* OldCPRView.swift in Sources */,
+				C9E1007F2DA37459007ABF8D /* Quotes.swift in Sources */,
 				C9E100772DA26611007ABF8D /* Double.swift in Sources */,
 				C9E1005F2D9F9714007ABF8D /* AudioCounter.swift in Sources */,
 				C9E100712DA25547007ABF8D /* DialGaugeView.swift in Sources */,
 				C9E100752DA264ED007ABF8D /* DepthView.swift in Sources */,
 				C9E100612D9F9940007ABF8D /* CompressionStatus.swift in Sources */,
 				C9E1FFFE2D9F7806007ABF8D /* SceneDelegate.swift in Sources */,
+				C9E1007B2DA37260007ABF8D /* HomeView.swift in Sources */,
 				C9E100042D9F7FC0007ABF8D /* CPRStartView.swift in Sources */,
 				C9E1000A2D9F8E72007ABF8D /* SpeechManager.swift in Sources */,
 			);
@@ -888,17 +958,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PulseGuideMobileApp/PulseGuideMobileApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BE9AG9X7E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseGuide;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -906,9 +979,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -917,17 +994,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PulseGuideMobileApp/PulseGuideMobileApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PulseGuideMobileApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BE9AG9X7E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseGuide;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -935,9 +1015,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PulseGuide.PulseGuideMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
