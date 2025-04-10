@@ -8,6 +8,7 @@ struct PulseGuideWatchAppApp: App {
         if WCSession.isSupported() {
             WCSession.default.delegate = WatchSessionDelegate.shared
             WCSession.default.activate()
+            print("watch session activated")
         }
     }
 
