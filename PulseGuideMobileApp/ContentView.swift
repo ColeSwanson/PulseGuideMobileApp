@@ -6,25 +6,21 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("📱 iPhone App Running")
+            Text("📱 iPhone Receiving CPM")
                 .font(.title)
 
             Text(sessionDelegate.latestMessage)
-                .foregroundColor(.blue)
-                .padding()
-                .multilineTextAlignment(.center)
+                .font(.largeTitle)
+                .foregroundColor(.green)
 
-            Button("Send Message to Watch") {
+            Button("Send Test Message to Watch") {
                 if WCSession.default.isReachable {
                     WCSession.default.sendMessage(["msg": "Hello from iPhone"], replyHandler: nil) { error in
-                        print("📱 Error sending to watch: \(error.localizedDescription)")
+                        print("Error sending to watch: \(error.localizedDescription)")
                     }
-                } else {
-                    print("📱 Watch not reachable")
                 }
             }
         }
         .padding()
     }
 }
-

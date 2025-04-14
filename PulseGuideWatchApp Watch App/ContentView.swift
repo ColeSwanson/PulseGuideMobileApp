@@ -2,20 +2,31 @@ import SwiftUI
 import WatchConnectivity
 
 struct ContentView: View {
+    @StateObject private var motionManager = MotionManager()
+
     var body: some View {
         VStack {
-            Text("Watch App")
-            Button("Send to iPhone") {
-                print("isReachable? \(WCSession.default.isReachable)")
-              
-                if WCSession.default.isReachable {
-                    print("sending from watch")
-                    WCSession.default.sendMessage(["msg": "Hello from Watch"], replyHandler: nil, errorHandler: { error in
-                        print("Error sending to phone: \(error)")
-                    })
-                } else {
-                    print("iPhone not reachable")
+            Text("CPR Compression Rate")
+                .font(.headline)
+                .padding()
+
+            Text("Live CPM (last 3 peaks):")
+                .font(.subheadline)
+
+            Text("\(motionManager.rollingCPM, specifier: "%.2f") CPM")
+                .font(.largeTitle)
+                .padding()
+
+            HStack {
+                Button("Start") {
+                    motionManager.startRecording()
                 }
+                .padding()
+
+                Button("Stop") {
+                    motionManager.stopRecording()
+                }
+                .padding()
             }
         }
     }

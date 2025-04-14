@@ -32,13 +32,13 @@ class PhoneSessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
     }
 
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        print("📱 PHONE RECEIVED MESSAGE: \(message)")
-
         DispatchQueue.main.async {
-            if let msg = message["msg"] as? String {
-                self.latestMessage = "Received from Watch: \(msg)"
+            if let cpm = message["cpm"] as? Double {
+                self.latestMessage = String(format: "CPM: %.2f", cpm)
+            } else if let msg = message["msg"] as? String {
+                self.latestMessage = "Received: \(msg)"
             } else {
-                self.latestMessage = "Received an unrecognized message"
+                self.latestMessage = "Unknown message received"
             }
         }
     }
