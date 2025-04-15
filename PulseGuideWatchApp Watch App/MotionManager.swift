@@ -129,13 +129,14 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
         let timeSpan = peakTimestamps.last! - peakTimestamps.first!
         if timeSpan > 0 {
             let cpm = 60.0 / (timeSpan / 2.0) // 2 intervals between 3 peaks
+            let depth = 2.0
             rollingCPM = cpm
             //rollingCPM = 75
             print("💓 Live Rolling CPM (last 3 peaks): \(String(format: "%.2f", rollingCPM))")
 
             // Send to iPhone via WCSession
             if WCSession.default.isReachable {
-                WCSession.default.sendMessage(["cpm": cpm], replyHandler: nil) { error in
+                WCSession.default.sendMessage(["cpm": cpm, "depth": depth], replyHandler: nil) { error in
                     print("❌ Failed to send CPM to iPhone: \(error.localizedDescription)")
                 }
             } else {

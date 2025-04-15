@@ -22,7 +22,8 @@ struct PulseGuideMobileAppApp: App {
 class PhoneSessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
     static let shared = PhoneSessionDelegate()
 
-    @Published var latestMessage: String = "No message yet"
+    @Published var cpm: Double = 100
+    @Published var depth: Double = 2
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("📱 WCSession activated with state: \(activationState.rawValue)")
@@ -34,11 +35,10 @@ class PhoneSessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         DispatchQueue.main.async {
             if let cpm = message["cpm"] as? Double {
-                self.latestMessage = String(format: "CPM: %.2f", cpm)
-            } else if let msg = message["msg"] as? String {
-                self.latestMessage = "Received: \(msg)"
-            } else {
-                self.latestMessage = "Unknown message received"
+                self.cpm = cpm
+            }
+            if let depth = message["depth"] as? Double {
+                self.depth = depth
             }
         }
     }
