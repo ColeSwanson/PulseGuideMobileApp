@@ -37,40 +37,40 @@ struct ContentView: View {
                         .rotationEffect(angle)
                 }
                 // Draw the needle
-                if speed < 90{
+                if sessionDelegate.cpm < 90{
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
                         .rotationEffect(Angle(degrees: -90))
                 }
-                else if speed > 130 {
+                else if sessionDelegate.cpm > 130 {
                         Rectangle()
                             .fill(Color.red)
                             .frame(width: 4, height: 100)
                             .offset(y: -50)
                             .rotationEffect(Angle(degrees: 90))
                 }
-                else if speed < 100 || speed > 120{
+                else if sessionDelegate.cpm < 100 || sessionDelegate.cpm > 120{
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: (speed - 90) * 4.5 - 90))
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
                 
                 }
-                else if speed <= 100 || speed >= 120{
+                else if sessionDelegate.cpm <= 100 || sessionDelegate.cpm >= 120{
                     Rectangle()
                         .fill(Color.yellow)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: (speed - 90) * 4.5 - 90))
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
                 }else{
                     Rectangle()
                         .fill(Color.green)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: (speed - 90) * 4.5 - 90))
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
                 }
 
                 // Draw the center circle
@@ -95,20 +95,20 @@ struct ContentView: View {
                     .offset(y: 50)
                 
                // Show the current speed
-                if speed < 100 || speed > 120{
-                    Text("\(Int(speed)) CPM")
+                if sessionDelegate.cpm < 100 || sessionDelegate.cpm > 120{
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
                         .offset(y: 100)
-                }else if speed <= 102 || speed >= 118{
-                    Text("\(Int(speed)) CPM")
+                }else if sessionDelegate.cpm <= 102 || sessionDelegate.cpm >= 118{
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
                         .offset(y: 100)
                 }else{
-                    Text("\(Int(speed)) CPM")
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
@@ -124,9 +124,9 @@ struct ContentView: View {
                                             .foregroundColor(Color.gray.opacity(0.3))
                                                 
                                         Rectangle()
-                                        .frame(width: 110, height: CGFloat((depth-1.80) * 250))
-                                        .foregroundColor(depthColor(depth:depth))
-                                            .animation(.easeInOut, value: depth)
+                                        .frame(width: 110, height: CGFloat((sessionDelegate.depth-1.80) * 250))
+                                        .foregroundColor(depthColor(depth:sessionDelegate.depth))
+                                            .animation(.easeInOut, value: sessionDelegate.depth)
                                     }
                                     .padding()
                 
@@ -156,20 +156,20 @@ struct ContentView: View {
                     .offset(y:130)
                 
                 // Show the current speed
-                if (depth) < 2 || depth > 2.4{
-                    Text("\(Int(depth)) In.")
+                if (sessionDelegate.depth) < 2 || sessionDelegate.depth > 2.4{
+                    Text("\(Int(sessionDelegate.depth)) In.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
                         .offset(y: -150)
-                }else if depth >= 2.35 || depth <= 2.05{
-                    Text("\(Int(depth)) In.")
+                }else if sessionDelegate.depth >= 2.35 || sessionDelegate.depth <= 2.05{
+                    Text("\(Int(sessionDelegate.depth)) In.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
                         .offset(y:-150)
                 }else{
-                    Text("\(depth, specifier: "%.2f") in.")
+                    Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
@@ -212,8 +212,6 @@ struct ContentView: View {
         }
         
         private func formatTime(_ time: TimeInterval) -> String {
-            self.speed = sessionDelegate.cpm
-            self.depth = sessionDelegate.depth
             let minutes = Int(time) / 60
             let seconds = Int(time) % 60
             return String(format: "%02d:%02d", minutes, seconds)
@@ -234,7 +232,3 @@ struct ContentView: View {
         }
     }
 
-
-    #Preview {
-        ContentView()
-    }
