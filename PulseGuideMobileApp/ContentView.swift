@@ -1,5 +1,6 @@
 import SwiftUI
 import WatchConnectivity
+import AVFoundation
 
 struct ContentView: View {
     @ObservedObject var sessionDelegate = PhoneSessionDelegate.shared
@@ -9,8 +10,11 @@ struct ContentView: View {
     @State private var timer: Timer? = nil
     @State private var isRunning: Bool = false
     @State private var elapsedTime: TimeInterval = 0
-    
+    @State private var metronomeTimer: Timer? = nil
+    @State private var isMetronomeRunning = false
+    @State private var audioPlayer: AVAudioPlayer?
 
+    
     var body: some View {
         VStack {
         // Show elapsed time in minutes and seconds
@@ -197,8 +201,10 @@ struct ContentView: View {
             Button(action: {
                 if isRunning {
                     stopTimer()
+                    stopMetronome()
                 } else {
                     startTimer()
+                    playDirections()
                 }
             }) {
                 Text(isRunning ? "Stop Timer" : "Start Timer")
@@ -243,6 +249,60 @@ struct ContentView: View {
             isRunning = false
             timer?.invalidate()
             timer = nil
+        }
+    
+        private func playTickSound() {
+            guard let url = Bundle.main.url(forResource: "Click_SD", withExtension: "wav") else {
+                print("Sound file not found")
+                return
+            }
+
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.volume = 1.0 // Full volume (range is 0.0 to 1.0)
+                audioPlayer?.stop()
+                audioPlayer?.currentTime = 0
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+        }
+    
+        private func playDirections() {
+            guard let url = Bundle.main.url(forResource: "Directions", withExtension: "m4a") else{
+                print("Sonud file not found")
+                return
+            }
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.volume = 1.0 // Full volume (range is 0.0 to 1.0)
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 11.0) {
+                startMetronome()
+            }
+        }
+    
+        private func startMetronome() {
+            let interval = 60.0 / 110.0  // ~0.545 seconds
+            metronomeTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
+                // Add your tick logic here, like sound, haptic, or visual change
+                playTickSound()  // Watch haptic feedback
+                print("Tick")  // Debug log
+            }
+            isMetronomeRunning = true
+        }
+
+        private func stopMetronome() {
+            metronomeTimer?.invalidate()
+            metronomeTimer = nil
+            isMetronomeRunning = false
         }
     }
 

@@ -114,6 +114,7 @@ struct ContentView: View {
                         .background(Color.white)  // Set background of entire screen to white
                         .edgesIgnoringSafeArea(.all)  // Ignore safe area to cover the whole screen
                         .onAppear {
+                            WKExtension.shared().isFrontmostTimeoutExtended = true
                             motionManager.startRecording()  // Start the timer when the view appears
                         }
                         .onDisappear {
