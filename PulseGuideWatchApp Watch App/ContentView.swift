@@ -81,14 +81,14 @@ struct ContentView: View {
                             
                             // Bottom section (Green background and Inches)
                             VStack {
-                                if (inches < 2){
+                                if (motionManager.rollingDepth < 2){
                                     Text("DEEPER")
                                         .font(.system(size: 30, weight: .bold, design: .rounded))
                                         .foregroundColor(.white)
                                         .frame(maxWidth: .infinity, maxHeight: 50)
                                         .background(Color.red)
                                         .cornerRadius(10)
-                                } else if (inches > 2.4){
+                                } else if (motionManager.rollingDepth > 2.4){
                                     Text("SHALLOWER")
                                         .font(.system(size: 30, weight: .bold, design: .rounded))
                                         .foregroundColor(.white)
@@ -96,7 +96,7 @@ struct ContentView: View {
                                         .background(Color.red)
                                         .cornerRadius(10)
                                 } else {
-                                    Text(String(format: "%.1f", inches))  // Formatting to 1 decimal point
+                                    Text(String(format: "%.1f", motionManager.rollingDepth))  // Formatting to 1 decimal point
                                         .font(.system(size: 50, weight: .bold, design: .rounded))
                                         .foregroundColor(.green)
                                     Text("In")
