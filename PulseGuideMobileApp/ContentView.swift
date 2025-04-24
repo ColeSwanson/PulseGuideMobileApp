@@ -123,10 +123,24 @@ struct ContentView: View {
                                             .frame(width: 110, height: 200)
                                             .foregroundColor(Color.gray.opacity(0.3))
                                                 
-                                        Rectangle()
-                                        .frame(width: 110, height: CGFloat((sessionDelegate.depth-1.80) * 250))
-                                        .foregroundColor(depthColor(depth:sessionDelegate.depth))
-                                            .animation(.easeInOut, value: sessionDelegate.depth)
+                                        
+                                        if (sessionDelegate.depth >= 2.6) {
+                                            Rectangle()
+                                                .frame(width: 110, height:200)
+                                                .foregroundColor(Color.red)
+                                        }
+                                        else if (sessionDelegate.depth <= 1.8) {
+                                            Rectangle()
+                                                    .frame(width: 110, height:0)
+                                                    .foregroundColor(Color.red)
+                                        }
+                                        else {
+                                            Rectangle()
+                                                .frame(width: 110, height: CGFloat((sessionDelegate.depth-1.80) * 250))
+                        
+                                                .foregroundColor(depthColor(depth:sessionDelegate.depth))
+                                                .animation(.easeInOut, value: sessionDelegate.depth)
+                                        }
                                     }
                                     .padding()
                 
@@ -156,14 +170,14 @@ struct ContentView: View {
                     .offset(y:130)
                 
                 // Show the current speed
-                if (sessionDelegate.depth) < 2 || sessionDelegate.depth > 2.4{
-                    Text("\(Int(sessionDelegate.depth)) In.")
+               if ((sessionDelegate.depth) < 2 || sessionDelegate.depth > 2.4) {
+                   Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
                         .offset(y: -150)
                 }else if sessionDelegate.depth >= 2.35 || sessionDelegate.depth <= 2.05{
-                    Text("\(Int(sessionDelegate.depth)) In.")
+                    Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)

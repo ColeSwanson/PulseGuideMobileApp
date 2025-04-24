@@ -19,6 +19,9 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
     @Published var acceleration: (x: Double, y: Double, z: Double) = (0, 0, 0)
     @Published var compressionRate: Double = 0.0 // Overall CPM
     @Published var rollingCPM: Double = 0.0 // CPM based on last 3 peaks
+    @Published var prevAcceleration: (x: Double, y: Double, z: Double) = (0, 0, 0)
+    private var depth: Double = 0.0
+    @Published var rollingDepth: Double = 0.0
 
     private var dataLog: [(timestamp: TimeInterval, ax: Double, ay: Double, az: Double, aMag: Double)] = []
     private var peakCount = 0
@@ -93,8 +96,27 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
                 } else {
                     self.isAboveThreshold = false // Reset when below threshold
                 }
+                
+                let mag = sqrt(self.acceleration.x * self.acceleration.x + self.acceleration.y * self.acceleration.y + self.acceleration.z * self.acceleration.z) - 1
+                let prevMag = sqrt(self.prevAcceleration.x * self.prevAcceleration.x + self.prevAcceleration.y * self.prevAcceleration.y + self.prevAcceleration.z * self.prevAcceleration.z) - 1
+                
+                let displacement = (mag * 0.01 * 0.01) * 9.81 * 39.37 * 5;
+                print(displacement)
+                
+                if(displacement > 0)
+                {
+                    self.depth = self.depth + displacement
+                }
+                else if(self.depth > 1)
+                {
+                    print("Depth: ", self.depth)
+                    self.rollingDepth = self.depth;
+                    self.depth = 0
+                }
+                
+                self.prevAcceleration = (ax, ay, az)
 
-                print("Data collected: \(self.dataLog.count) samples, Smoothed Accel Mag: \(smoothedMag)")
+                // print("Data collected: \(self.dataLog.count) samples, Smoothed Accel Mag: \(smoothedMag)")
             }
         } else {
             print("🚨 Accelerometer is NOT available on this device! 🚨")
@@ -129,14 +151,13 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
         let timeSpan = peakTimestamps.last! - peakTimestamps.first!
         if timeSpan > 0 {
             let cpm = 60.0 / (timeSpan / 2.0) // 2 intervals between 3 peaks
-            let depth = 2.0
             rollingCPM = cpm
             //rollingCPM = 75
             print("💓 Live Rolling CPM (last 3 peaks): \(String(format: "%.2f", rollingCPM))")
 
             // Send to iPhone via WCSession
             if WCSession.default.isReachable {
-                WCSession.default.sendMessage(["cpm": cpm, "depth": depth], replyHandler: nil) { error in
+                WCSession.default.sendMessage(["cpm": cpm, "depth": self.rollingDepth], replyHandler: nil) { error in
                     print("❌ Failed to send CPM to iPhone: \(error.localizedDescription)")
                 }
             } else {
