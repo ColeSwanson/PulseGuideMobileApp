@@ -1,17 +1,33 @@
-//
-//  PulseGuideWatchAppApp.swift
-//  PulseGuideWatchApp Watch App
-//
-//  Created by Swanson, Cole T on 3/6/25.
-//
-
 import SwiftUI
+import WatchConnectivity
 
 @main
-struct PulseGuideWatchApp_Watch_AppApp: App {
+struct PulseGuideWatchAppApp: App {
+    
+    init() {
+        if WCSession.isSupported() {
+            WCSession.default.delegate = WatchSessionDelegate.shared
+            WCSession.default.activate()
+            print("watch session activated")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+// Singleton delegate
+class WatchSessionDelegate: NSObject, WCSessionDelegate {
+    static let shared = WatchSessionDelegate()
+
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("Watch: WCSession activated: \(activationState.rawValue)")
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print("Watch received message: \(message)")
     }
 }

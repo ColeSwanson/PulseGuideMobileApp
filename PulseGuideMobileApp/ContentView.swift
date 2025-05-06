@@ -1,19 +1,20 @@
-//
-//  ContentView.swift
-//  PhoneAppPrototype
-//
-//  Created by Faith Maue on 12/10/24.
-//
-
 import SwiftUI
+import WatchConnectivity
+import AVFoundation
 
 struct ContentView: View {
-    @State private var speed: Double = 100
+    @ObservedObject var sessionDelegate = PhoneSessionDelegate.shared
+    
+    @State private var speed: Double = 0
     @State private var depth: Double = 2.20
     @State private var timer: Timer? = nil
     @State private var isRunning: Bool = false
     @State private var elapsedTime: TimeInterval = 0
+    @State private var metronomeTimer: Timer? = nil
+    @State private var isMetronomeRunning = false
+    @State private var audioPlayer: AVAudioPlayer?
 
+    
     var body: some View {
         VStack {
         // Show elapsed time in minutes and seconds
@@ -40,24 +41,40 @@ struct ContentView: View {
                         .rotationEffect(angle)
                 }
                 // Draw the needle
-                if speed < 100 || speed > 120{
+                if sessionDelegate.cpm < 90{
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: speed * 4.5 - 90))
-                }else if speed <= 102 || speed >= 118{
+                        .rotationEffect(Angle(degrees: -90))
+                }
+                else if sessionDelegate.cpm > 130 {
+                        Rectangle()
+                            .fill(Color.red)
+                            .frame(width: 4, height: 100)
+                            .offset(y: -50)
+                            .rotationEffect(Angle(degrees: 90))
+                }
+                else if sessionDelegate.cpm < 100 || sessionDelegate.cpm > 120{
+                    Rectangle()
+                        .fill(Color.red)
+                        .frame(width: 4, height: 100)
+                        .offset(y: -50)
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
+                
+                }
+                else if sessionDelegate.cpm <= 100 || sessionDelegate.cpm >= 120{
                     Rectangle()
                         .fill(Color.yellow)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: speed * 4.5 - 90))
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
                 }else{
                     Rectangle()
                         .fill(Color.green)
                         .frame(width: 4, height: 100)
                         .offset(y: -50)
-                        .rotationEffect(Angle(degrees: speed * 4.5 - 90))
+                        .rotationEffect(Angle(degrees: (sessionDelegate.cpm - 90) * 4.5 - 90))
                 }
 
                 // Draw the center circle
@@ -82,20 +99,20 @@ struct ContentView: View {
                     .offset(y: 50)
                 
                // Show the current speed
-                if speed < 100 || speed > 120{
-                    Text("\(Int(speed)) CPM")
+                if sessionDelegate.cpm < 100 || sessionDelegate.cpm > 120{
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
                         .offset(y: 100)
-                }else if speed <= 102 || speed >= 118{
-                    Text("\(Int(speed)) CPM")
+                }else if sessionDelegate.cpm <= 102 || sessionDelegate.cpm >= 118{
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
                         .offset(y: 100)
                 }else{
-                    Text("\(Int(speed)) CPM")
+                    Text("\(Int(sessionDelegate.cpm)) CPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
@@ -105,32 +122,31 @@ struct ContentView: View {
             .frame(width: 300, height: 300)
             
             ZStack{
-                Rectangle()
-                    .fill(Color.gray.opacity(0.3))
-                    .frame(width:110, height:200)
-
-                
-                // Draw the bar
-                if depth < 2 || depth > 2.4{
-                    Rectangle()
-                        .fill(Color.red)
-                        .frame(width: 110, height: 2
-                               * depth)
-                        .offset(y: depth * (-1) + 100)
-                        //.offset(y: depth * (-2) + 100)
-                }else if depth >= 2.35 || depth <= 2.05{
-                    Rectangle()
-                        .fill(Color.yellow)
-                        .frame(width: 110, height: 2 * depth)
-                        .offset(y: depth * (-1) + 100)
-                        //.offset(y: depth * (-2) + 100)
-                }else{
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 110, height: 2 * depth)
-                        .offset(y: depth * (-1) + 100)
-                        //.offset(y: depth * (-2) + 100)
-                }
+                ZStack(alignment: .bottom) {
+                                        Rectangle()
+                                            .frame(width: 110, height: 200)
+                                            .foregroundColor(Color.gray.opacity(0.3))
+                                                
+                                        
+                                        if (sessionDelegate.depth >= 2.6) {
+                                            Rectangle()
+                                                .frame(width: 110, height:200)
+                                                .foregroundColor(Color.red)
+                                        }
+                                        else if (sessionDelegate.depth <= 1.8) {
+                                            Rectangle()
+                                                    .frame(width: 110, height:0)
+                                                    .foregroundColor(Color.red)
+                                        }
+                                        else {
+                                            Rectangle()
+                                                .frame(width: 110, height: CGFloat((sessionDelegate.depth-1.80) * 250))
+                        
+                                                .foregroundColor(depthColor(depth:sessionDelegate.depth))
+                                                .animation(.easeInOut, value: sessionDelegate.depth)
+                                        }
+                                    }
+                                    .padding()
                 
                 // Draw the ticks
                 ForEach(0..<5, id: \.self) { tick in
@@ -158,20 +174,20 @@ struct ContentView: View {
                     .offset(y:130)
                 
                 // Show the current speed
-                if (depth) < 2 || depth > 2.4{
-                    Text("\(Int(depth)) In.")
+               if ((sessionDelegate.depth) < 2 || sessionDelegate.depth > 2.4) {
+                   Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.red)
                         .offset(y: -150)
-                }else if depth >= 2.35 || depth <= 2.05{
-                    Text("\(Int(depth)) In.")
+                }else if sessionDelegate.depth >= 2.35 || sessionDelegate.depth <= 2.05{
+                    Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.yellow)
                         .offset(y:-150)
                 }else{
-                    Text("\(Int(depth)) In.")
+                    Text("\(sessionDelegate.depth, specifier: "%.2f") in.")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.green)
@@ -185,8 +201,10 @@ struct ContentView: View {
             Button(action: {
                 if isRunning {
                     stopTimer()
+                    stopMetronome()
                 } else {
                     startTimer()
+                    playDirections()
                 }
             }) {
                 Text(isRunning ? "Stop Timer" : "Start Timer")
@@ -199,27 +217,92 @@ struct ContentView: View {
             }
         }
     }
-    private func formatTime(_ time: TimeInterval) -> String {
+    
+        private func depthColor(depth:Double) -> Color {
+            if (depth) < 2 || depth > 2.4{
+                return Color.red
+            }
+            else if depth >= 2.3 || depth <= 2.10 {
+                return Color.yellow
+            }
+            else {
+                return Color.green
+            }
+            
+        }
+        
+        private func formatTime(_ time: TimeInterval) -> String {
             let minutes = Int(time) / 60
             let seconds = Int(time) % 60
             return String(format: "%02d:%02d", minutes, seconds)
-    }
+        }
 
-    private func startTimer() {
-        isRunning = true
-        elapsedTime = 0
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-            elapsedTime += 0.1
+        private func startTimer() {
+            isRunning = true
+            elapsedTime = 0
+            timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                elapsedTime += 0.1
+            }
+        }
+
+        private func stopTimer() {
+            isRunning = false
+            timer?.invalidate()
+            timer = nil
+        }
+    
+        private func playTickSound() {
+            guard let url = Bundle.main.url(forResource: "Click_SD", withExtension: "wav") else {
+                print("Sound file not found")
+                return
+            }
+
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.volume = 1.0 // Full volume (range is 0.0 to 1.0)
+                audioPlayer?.stop()
+                audioPlayer?.currentTime = 0
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+        }
+    
+        private func playDirections() {
+            guard let url = Bundle.main.url(forResource: "Directions", withExtension: "m4a") else{
+                print("Sonud file not found")
+                return
+            }
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.volume = 1.0 // Full volume (range is 0.0 to 1.0)
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound: \(error.localizedDescription)")
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 11.0) {
+                startMetronome()
+            }
+        }
+    
+        private func startMetronome() {
+            let interval = 60.0 / 110.0  // ~0.545 seconds
+            metronomeTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
+                // Add your tick logic here, like sound, haptic, or visual change
+                playTickSound()  // Watch haptic feedback
+                print("Tick")  // Debug log
+            }
+            isMetronomeRunning = true
+        }
+
+        private func stopMetronome() {
+            metronomeTimer?.invalidate()
+            metronomeTimer = nil
+            isMetronomeRunning = false
         }
     }
 
-    private func stopTimer() {
-        isRunning = false
-        timer?.invalidate()
-        timer = nil
-    }
-}
-
-#Preview {
-    ContentView()
-}
