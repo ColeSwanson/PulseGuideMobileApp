@@ -134,6 +134,5 @@ struct ContentView: View {
                                 .cornerRadius(30)
                         }
                     }
- //       }
     }
 }

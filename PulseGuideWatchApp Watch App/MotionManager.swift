@@ -92,6 +92,7 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
                         if self.peakTimestamps.count > 3 {
                             self.peakTimestamps.removeFirst()
                         }
+
                     }
                 } else {
                     self.isAboveThreshold = false // Reset when below threshold
@@ -128,12 +129,14 @@ class MotionManager: NSObject, ObservableObject, WCSessionDelegate {
         timer?.invalidate()
         updateTimer?.invalidate() // Stop the CPM update timer
 
+
         if let startTime = dataLog.first?.timestamp, let endTime = dataLog.last?.timestamp {
             let duration = endTime - startTime // Time in seconds
             let durationMinutes = duration / 60.0 // Convert to minutes
 
             let compressionsPerMinute = durationMinutes > 0 ? Double(peakCount) / durationMinutes : 0.0
             compressionRate = compressionsPerMinute // Update @Published variable
+
 
             print("🚀 Data collection stopped.")
             print("Total samples collected: \(dataLog.count)")
